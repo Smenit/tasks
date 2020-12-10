@@ -54,11 +54,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Название:</label>
-                            <input type="text" name="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Приоритет:</label>
+                            <label for="recipient-name" class="col-form-label">Статус:</label>
                             <select class="form-control" name="status" required>
                                 @foreach($pageSettings['statuses'] as $status)
                                     <option value="{{ $status }}" class="translate">__(statuses.{{ $status }})</option>
@@ -66,7 +62,11 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Статус:</label>
+                            <label for="recipient-name" class="col-form-label">Название:</label>
+                            <input type="text" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Приоритет:</label>
                             <select class="form-control" name="priority" required>
                                 @foreach($pageSettings['priorities'] as $priority)
                                     <option value="{{ $priority }}" class="translate">__(priorities.{{ $priority }})
